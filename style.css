@@ -17,9 +17,6 @@ body{
     max-width: 540px;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
-    justify-content: center;
-    position: absolute;
-    transform: translate(90%);
     border-radius: 10px;
 }
 .heading{
@@ -75,14 +72,24 @@ ul li::before{
     margin-left: -40px;
     
 }
-#task1{
+ul li.checked{
     text-decoration: line-through;
     color: #555;
+    font-size: 1hpx;
 }
-#task1::before{
+ul li.checked::before{
     background-image: url('images/checked.png');
 }
-
-
+ul li span{
+    position: absolute;
+    font-size: 30px;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
 
 
