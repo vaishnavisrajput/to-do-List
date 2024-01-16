@@ -18,6 +18,7 @@ body{
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
+    
 }
 .heading{
     font-size: 18px;
@@ -47,6 +48,10 @@ body{
     border: 0px;
     background-color: rgb(236, 77, 77);
     color: white;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color:  rgb(229, 70, 70);
 }
 ul li{
     padding: 12px 8px 12px 50px;
@@ -90,6 +95,53 @@ ul li span{
     color: #555;
     line-height: 40px;
     text-align: center;
+    transition: 0.5s;
+}
+ul li span:hover{
+    background-color: #d2d1d1;
+    border-radius: 40%;
 }
 
 
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px){
+    body{
+        height: 80vh;
+    }
+    .container{
+        max-width: 450px;
+    }
+}
+@media (max-width: 468px){
+    .container{
+        max-width: 350px;
+    }
+    .heading{
+        font-size: 14px;
+    }
+    .heading img{
+        width: 20px;
+        height: 3vh;
+    }
+    #add-task{
+        font-size: 12px;
+    }
+    .btn{
+        font-size: 12px;
+    }
+    .list{
+        font-size: 12px;
+    }
+    ul li span{
+        font-size: 25px;
+    }
+}  
+@media (min-width: 769px) and (max-width: 1024px){
+    body{
+        height: 85vh;
+    }
+    .container{
+        max-width: 540px;
+    }
+}
